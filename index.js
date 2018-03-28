@@ -3,8 +3,14 @@ var happyHolidays = function() {
   return 'Happy holidays!';
 };
 
-var happyHolidaysTo = function(name, holiday='Happy holidays') {
-  return '';
+var happyHolidaysTo = function(name) {
+  return `Happy holidays, ${name}!`;
 };
 
-var holidayCountdown = function() {};
+var happyHolidayTo = function(holiday, name) {
+  return `Happy ${holiday}, ${name}!`;
+};
+
+var holidayCountdown = function(holiday, days) {
+  return `It's ${days} days until ${holiday}!`;
+};
